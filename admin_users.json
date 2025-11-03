@@ -1,0 +1,18 @@
+[
+    {
+        "id": "admin_001",
+        "username": "admin",
+        "password": "$2y$10$/mdD0MRg0CUZEBCwLD3bTezrd0iC2.WlXFZcblqS7ABS62VaM9VFK",
+        "role": "admin",
+        "created_at": "2024-01-01 00:00:00",
+        "status": "active"
+    },
+    {
+        "id": "admin_002",
+        "username": "superadmin",
+        "password": "$2y$10$/mdD0MRg0CUZEBCwLD3bTezrd0iC2.WlXFZcblqS7ABS62VaM9VFK",
+        "role": "super_admin",
+        "created_at": "2024-01-01 00:00:00",
+        "status": "active"
+    }
+]

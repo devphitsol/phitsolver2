@@ -1,0 +1,51 @@
+# Environment files
+.env
+.env.local
+.env.production
+.env.staging
+config.env
+
+# Extended environment patterns
+.env.*
+*.env
+.envrc
+.envrc.local
+!.env.example
+!.env.*.example
+
+# Sensitive configuration files
+config/database.php
+config/session.php
+
+# Data files (if using file storage fallback)
+data/
+uploads/
+
+# Logs
+*.log
+logs/
+
+# Cache
+cache/
+tmp/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Composer
+vendor/
+composer.lock
+
+# Node modules (if any)
+node_modules/
+
+# Temporary files
+*.tmp
+*.temp 

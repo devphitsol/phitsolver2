@@ -1,0 +1,40 @@
+RewriteEngine On
+
+# Serve root index.html directly (must be first)
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteRule ^/?$ index.html [L]
+
+# Redirect specific paths to public directory (excluding admin)
+RewriteCond %{REQUEST_URI} ^/(about|blog-creative|contact|copyright|login|privacy-policy|search-result|services-disposal|services-maintenance|services-partners|services-purchase|services-rental|services-technical|terms-and-conditions|api|partners-dashboard|product-catalogue|profile|purchased-products|view-purchase-order|auth|logout|blog|blog-post|company-profile|contact-support|403|404|500)/
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Redirect individual files to public directory (for files without trailing slash, excluding admin)
+RewriteCond %{REQUEST_URI} ^/(about|blog-creative|contact|copyright|login|privacy-policy|search-result|services-disposal|services-maintenance|services-partners|services-purchase|services-rental|services-technical|terms-and-conditions|api|partners-dashboard|product-catalogue|profile|purchased-products|view-purchase-order|auth|logout|blog|blog-post|company-profile|contact-support|403|404|500)\.(html|php)$
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Allow direct access to existing files and directories in root
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# For other requests, serve from root (index.html will be served by default)
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Allow access to public directory
+# Note: Directory directives are not allowed in .htaccess files
+
+# Block access to sensitive files
+<FilesMatch "\.(env|git|composer\.(json|lock)|README\.md)$">
+    Require all denied
+</FilesMatch>
+
+# Error documents
+ErrorDocument 403 /public/403.php
+ErrorDocument 404 /public/404.php
+ErrorDocument 500 /public/500.php 

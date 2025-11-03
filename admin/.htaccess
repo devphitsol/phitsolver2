@@ -1,0 +1,25 @@
+RewriteEngine On
+
+# 관리자 대시보드 접근 설정
+# admin/ 폴더 보안 설정
+
+# 인증이 필요한 페이지들
+<Files "*.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# 세션 체크 (PHP에서 처리)
+# 이 파일은 기본 보안 설정만 제공
+
+# 에러 페이지
+ErrorDocument 404 /admin/404.php
+ErrorDocument 500 /admin/500.php
+
+# 캐시 설정 (관리자 페이지는 캐시 비활성화)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType application/javascript "access plus 0 seconds"
+    ExpiresByType text/css "access plus 0 seconds"
+</IfModule> 

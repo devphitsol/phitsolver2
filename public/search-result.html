@@ -1,0 +1,570 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJSZT33R');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DFTSQLP05"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6DFTSQLP05');
+</script>
+        <!-- End Google tag (gtag.js) -->
+        <!-- Analytics Event Tracking -->
+        <script src="../js/analytics-events.js"></script>
+        <title>Search Results - PHITSOL INC.</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta name="description" content="Search results for PHITSOL INC. - Find information about our IT solutions, services, and equipment.">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="../images/favicon.png">
+        <link rel="p-icon" href="../images/p-icon-57x57.png">
+        <link rel="p-icon" sizes="72x72" href="../images/p-icon-72x72.png">
+        <link rel="p-icon" sizes="114x114" href="../images/p-icon-114x114.png">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" href="../css/vendors.min.css?v=20250916" />
+        <link rel="stylesheet" href="../css/icon.min.css?v=20250916" />
+        <link rel="stylesheet" href="../css/style.css?v=20250117"/>
+        <link rel="stylesheet" href="../css/responsive.css?v=20250916"/>
+        <link rel="stylesheet" href="../demos/corporate/corporate.css?v=20250916" />
+        <style>
+            .search-results-container {
+                padding: 100px 0 80px;
+                background-color: #f8f9fa;
+            }
+            .search-results-header {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+            .search-results-header h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #2c3e50;
+                margin-bottom: 20px;
+            }
+            .search-query {
+                font-size: 1.2rem;
+                color: #667eea;
+                font-weight: 600;
+            }
+            .search-results-content {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            .search-result-item {
+                background: white;
+                border-radius: 10px;
+                padding: 30px;
+                margin-bottom: 30px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .search-result-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            }
+            .search-result-title {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #2c3e50;
+                margin-bottom: 15px;
+            }
+            .search-result-title a {
+                color: #667eea;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            .search-result-title a:hover {
+                color: #764ba2;
+            }
+            .search-result-url {
+                color: #28a745;
+                font-size: 0.9rem;
+                margin-bottom: 10px;
+            }
+            .search-result-snippet {
+                color: #6c757d;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+            .search-result-meta {
+                font-size: 0.85rem;
+                color: #adb5bd;
+            }
+            .no-results {
+                text-align: center;
+                padding: 60px 20px;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            }
+            .no-results h3 {
+                color: #6c757d;
+                margin-bottom: 20px;
+            }
+            .no-results p {
+                color: #adb5bd;
+                margin-bottom: 30px;
+            }
+            .search-suggestions {
+                background: #f8f9fa;
+                border-radius: 10px;
+                padding: 30px;
+                margin-top: 40px;
+            }
+            .search-suggestions h4 {
+                color: #2c3e50;
+                margin-bottom: 20px;
+            }
+            .suggestion-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .suggestion-links a {
+                background: white;
+                color: #667eea;
+                padding: 10px 20px;
+                border-radius: 25px;
+                text-decoration: none;
+                border: 2px solid #e9ecef;
+                transition: all 0.3s ease;
+            }
+            .suggestion-links a:hover {
+                background: #667eea;
+                color: white;
+                border-color: #667eea;
+            }
+            .search-form-container {
+                background: white;
+                border-radius: 10px;
+                padding: 30px;
+                margin-bottom: 40px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            }
+            .search-form-container h3 {
+                color: #2c3e50;
+                margin-bottom: 20px;
+            }
+            .search-input-group {
+                display: flex;
+                gap: 10px;
+            }
+            .search-input-group input {
+                flex: 1;
+                padding: 15px 20px;
+                border: 2px solid #e9ecef;
+                border-radius: 10px;
+                font-size: 1rem;
+                transition: border-color 0.3s ease;
+            }
+            .search-input-group input:focus {
+                outline: none;
+                border-color: #667eea;
+            }
+            .search-input-group button {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                border: none;
+                padding: 15px 25px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            .search-input-group button:hover {
+                transform: translateY(-2px);
+            }
+            @media (max-width: 768px) {
+                .search-results-header h1 {
+                    font-size: 2rem;
+                }
+                .search-result-item {
+                    padding: 20px;
+                }
+                .search-input-group {
+                    flex-direction: column;
+                }
+                .suggestion-links {
+                    justify-content: center;
+                }
+            }
+        </style>
+    </head>
+
+    <body data-mobile-nav-style="classic">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJSZT33R"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <!-- start header -->
+        <header class="header-light bg-white disable-fixed">
+            <!-- start navigation -->
+            <nav class="navbar navbar-expand-lg header-light bg-white disable-fixed">
+                <div class="container-fluid">
+                    <div class="col-auto col-xl-3 col-lg-2 me-lg-0 me-auto">
+                        <a class="navbar-brand" href="/">
+                                <img src="../images/phitsol-logo-black@2x.png" data-at2x="../images/phitsol-logo-black@2x.png" alt="Phitsol" class="default-logo" style="height: 50px; max-width: 300px; object-fit: contain;" width="174" height="46">
+                                <img src="../images/phitsol-logo-black@2x.png" data-at2x="../images/phitsol-logo-black@2x.png" alt="Phitsol" class="alt-logo" style="height: 50px; max-width: 300px; object-fit: contain;" width="174" height="46">
+                            <img src="../images/phitsol-logo-black.png" data-at2x="../images/phitsol-logo-black@2x.png" alt="Phitsol" class="mobile-logo" style="height: 40px; max-width: 250px; object-fit: contain;">
+                        </a>
+                    </div>
+                    <div class="col-auto col-xl-6 col-lg-8 menu-order position-static">
+                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="services-purchase.html" class="nav-link">Services</a></li>
+                                <li class="nav-item"><a href="https://store.phitsol.com/" class="nav-link" target="_blank">Shop</a></li>
+                                <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li class="nav-item d-xl-none"><a href="login.php" class="nav-link">Partners Portal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto col-xl-3 col-lg-2 text-lg-end">
+                        <div class="header-icon">
+                            <div class="header-search-icon icon">
+                                <a href="services-partners.html" class="search-form-icon header-search-form"><i class="feather icon-feather-search"></i></a>
+                                <!-- start search input -->
+                                <div class="search-form-wrapper">
+                                    <button title="Close" type="button" class="search-close">×</button>
+                                    <form id="search-form" role="search" method="get" class="search-form text-left" action="search-result.html">
+                                        <div class="search-form-box">
+                                            <h2 class="text-dark-gray text-center fw-600 mb-4 ls-minus-1px">What are you looking for?</h2>
+                                            <input class="search-input" id="search-form-input" placeholder="Enter your keywords..." name="s" value="" type="text" autocomplete="off">
+                                            <button type="submit" class="search-button">
+                                                <i class="feather icon-feather-search" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- end search input -->
+                            </div>
+                            <div class="header-button ms-20px d-none d-xl-inline-block">
+                                <a href="login.php" class="btn btn-rounded btn-transparent-light-gray border-1 btn-medium btn-switch-text text-transform-none">
+                                    <span>
+                                        <span class="btn-double-text fw-600" data-text="Partners Portal">Partners Portal</span>
+                                        <span><i class="fa-solid fa-handshake"></i></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navigation -->
+        </header>
+        <!-- end header -->
+
+        <!-- start search results section -->
+        <section class="search-results-container">
+            <div class="container">
+                <div class="search-results-header">
+                    <h1>Search Results</h1>
+                    <div class="search-query" id="searchQuery">Searching for: <span id="searchTerm"></span></div>
+                </div>
+
+                <div class="search-results-content">
+                    <!-- Search form -->
+                    <div class="search-form-container">
+                        <h3>Search Again</h3>
+                        <form method="get" action="search-result.html" class="search-input-group">
+                            <input type="text" name="s" placeholder="Enter your search terms..." id="newSearchInput" required>
+                            <button type="submit">
+                                <i class="feather icon-feather-search"></i> Search
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Search results will be populated here -->
+                    <div id="searchResults">
+                        <!-- Results will be dynamically generated -->
+                    </div>
+
+                    <!-- No results message -->
+                    <div id="noResults" class="no-results" style="display: none;">
+                        <h3>No results found</h3>
+                        <p>Sorry, we couldn't find any results for your search. Try different keywords or check the suggestions below.</p>
+                    </div>
+
+                    <!-- Search suggestions -->
+                    <div class="search-suggestions">
+                        <h4>Popular Searches</h4>
+                        <div class="suggestion-links">
+                            <a href="search-result.html?s=equipment+rental">Equipment Rental</a>
+                            <a href="search-result.html?s=disposal+services">Disposal Services</a>
+                            <a href="search-result.html?s=maintenance+repair">Maintenance & Repair</a>
+                            <a href="search-result.html?s=technical+support">Technical Support</a>
+                            <a href="search-result.html?s=it+solutions">IT Solutions</a>
+                            <a href="search-result.html?s=partners+portal">Partners Portal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end search results section -->
+
+        <!-- start footer - Updated 2024 -->
+        <footer class="p-0 fs-16 border-top border-color-extra-medium-gray">
+            <div class="container"> 
+                <div class="row justify-content-center pt-6 sm-pt-40px">
+                    <!-- start footer column -->
+                    <div class="col-6 col-xl-3 col-lg-12 col-sm-6 last-paragraph-no-margin text-xl-start text-lg-center order-sm-1 lg-mb-50px sm-mb-30px">
+                        <a href="/" class="footer-logo mb-15px d-inline-block"><img src="../images/phitsol-logo-black.png" data-at2x="../images/phitsol-logo-black@2x.png" alt="Phitsol" style="height: 40px; max-width: 200px; object-fit: contain;"></a>
+                        <p class="lh-30 w-90 xl-w-100 mx-lg-auto mx-xl-0">Leading your business forward through innovation.</p>
+                        <div class="elements-social social-icon-style-02 mt-20px xs-mt-15px">
+                            <ul class="medium-icon dark">
+                                <li class="my-0"><a class="facebook" href="https://www.facebook.com/phitsol.inc" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="my-0"><a class="youtube" href="https://www.youtube.com/@phitsol" target="_blank"><i class="fa-brands fa-youtube"></i></a></li> 
+                                <li class="my-0"><a class="linkedin" href="https://www.linkedin.com/in/hoibin-yoon-273275213" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li> 
+                                <li class="my-0"><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-xl-2 col-lg-3 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                        <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Company</span>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services-purchase.html">Services</a></li>
+                            <li><a href="https://store.phitsol.com/" target="_blank">Shop</a></li>
+                            <li><a href="blog.php">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-xl-2 col-lg-3 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
+                        <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Services</span>
+                        <ul>
+                            <li><a href="services-purchase.html">IT Equipment Purchase</a></li>
+                            <li><a href="services-rental.html">Equipment Rental</a></li>
+                            <li><a href="services-disposal.html">Disposal Services</a></li>
+                            <li><a href="services-maintenance.html">Maintenance & Repair</a></li>
+                            <li><a href="services-technical.html">Technical Support</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-xl-2 col-lg-3 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
+                        <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Customer</span>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="services-partners.html">Partners Portal</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-xl-3 col-lg-3 col-sm-6 md-mb-50px sm-mb-30px xs-mb-0 order-sm-2 order-lg-5">
+                        <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Subscribe newsletter</span>
+                        <p class="lh-30 w-95 sm-w-100 mb-15px">Subscribe our newsletter to get the latest news and updates!</p>
+                        <div class="d-inline-block w-100 newsletter-style-02 position-relative"> 
+                            <form action="../email-templates/subscribe-newsletter.php" method="post" class="position-relative">
+                                <input class="border-color-extra-medium-gray bg-transparent border-radius-4px w-100 form-control input-small pe-50px required" type="email" name="email" placeholder="Enter your email" />
+                                <input type="hidden" name="redirect" value="">
+                                <button class="btn pe-20px submit lh-16 newsletter-submit-btn" aria-label="submit"><i class="feather icon-feather-mail icon-small text-dark-gray"></i></button>
+                                
+                                <!-- ?�공 메시지 -->
+                                <div class="newsletter-status newsletter-success d-none">
+                                    <i class="fa-solid fa-check-circle icon-small text-success me-5px"></i>
+                                    Subscription successful!
+                                </div>
+                                
+                                <!-- ?�패 메시지 -->
+                                <div class="newsletter-status newsletter-error d-none">
+                                    <i class="fa-solid fa-exclamation-circle icon-small text-danger me-5px"></i>
+                                    There was a problem. Please try again.
+                                </div>
+                                
+                                <div class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end footer column -->                      
+                </div>
+                <div class="row justify-content-center align-items-center pt-2">
+                    <!-- start divider -->
+                    <div class="col-12">
+                        <div class="divider-style-03 divider-style-03-01 border-color-transparent-white-light"></div>
+                    </div>
+                    <!-- end divider -->
+                    <!-- start copyright -->
+                    <div class="col-lg-5 pt-35px pb-35px md-pt-0 order-2 order-lg-1 text-center text-lg-start last-paragraph-no-margin"><p>&copy; Copyright @ 2024. PHITSOL INC. Philippine I.T. Solution All Rights Reserved</p></div>
+                    <!-- end copyright -->
+                    <!-- start footer menu -->
+                    <div class="col-lg-7 pt-35px pb-35px md-pt-25px md-pb-5px order-1 order-lg-2 text-center text-lg-end">
+                        <ul class="footer-navbar sm-lh-normal"> 
+                            <li><a href="privacy-policy.html" class="nav-link">Privacy policy</a></li>
+                            <li><a href="terms-and-conditions.html" class="nav-link">Terms and conditions</a></li>
+                            <li><a href="copyright.html" class="nav-link">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer menu -->
+                </div>
+            </div> 
+        </footer>
+        <!-- end footer -->
+
+        <!-- start scroll to top -->
+        <a class="scroll-top-btn" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+        <!-- end scroll to top -->
+
+        <!-- javascript -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/vendors.min.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+
+        <script>
+            // Search functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get search query from URL parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const searchTerm = urlParams.get('s');
+                
+                if (searchTerm) {
+                    document.getElementById('searchTerm').textContent = searchTerm;
+                    document.getElementById('newSearchInput').value = searchTerm;
+                    
+                    // Perform search
+                    performSearch(searchTerm);
+                } else {
+                    document.getElementById('searchTerm').textContent = 'No search term provided';
+                    document.getElementById('noResults').style.display = 'block';
+                }
+            });
+
+            function performSearch(query) {
+                // Define searchable content
+                const searchableContent = [
+                    {
+                        title: 'Equipment Rental Services',
+                        url: 'services-rental.html',
+                        snippet: 'Rent high-quality IT equipment including computers, servers, networking devices, and more. Flexible rental terms and competitive pricing.',
+                        category: 'Services'
+                    },
+                    {
+                        title: 'Disposal Services',
+                        url: 'services-disposal.html',
+                        snippet: 'Secure and environmentally responsible disposal of IT equipment. Data destruction and asset recovery services.',
+                        category: 'Services'
+                    },
+                    {
+                        title: 'Maintenance & Repair',
+                        url: 'services-maintenance.html',
+                        snippet: 'Professional maintenance and repair services for all types of IT equipment. Preventive maintenance programs available.',
+                        category: 'Services'
+                    },
+                    {
+                        title: 'Technical Support',
+                        url: 'services-technical.html',
+                        snippet: '24/7 technical support services. Remote and on-site support for your IT infrastructure and equipment.',
+                        category: 'Services'
+                    },
+                    {
+                        title: 'Purchase Services',
+                        url: 'services-purchase.html',
+                        snippet: 'Purchase new and refurbished IT equipment. Competitive pricing and warranty options available.',
+                        category: 'Services'
+                    },
+                    {
+                        title: 'Partners Portal',
+                        url: 'services-partners.html',
+                        snippet: 'Access to our partners portal for business users. Manage your account, view orders, and access exclusive resources.',
+                        category: 'Partners'
+                    },
+                    {
+                        title: 'About PHITSOL',
+                        url: 'about.html',
+                        snippet: 'Learn about PHITSOL INC., our mission, values, and commitment to providing innovative IT solutions.',
+                        category: 'Company'
+                    },
+                    {
+                        title: 'Contact Us',
+                        url: 'contact.html',
+                        snippet: 'Get in touch with our team. Contact information, office locations, and support channels.',
+                        category: 'Company'
+                    },
+                    {
+                        title: 'IT Solutions',
+                        url: 'services-purchase.html',
+                        snippet: 'Comprehensive IT solutions for businesses. From equipment rental to technical support, we have you covered.',
+                        category: 'Services'
+                    },
+                    {
+                        title: 'Partners Login',
+                        url: 'login.php',
+                        snippet: 'Login to your partners portal account to access exclusive features and manage your business relationship with PHITSOL.',
+                        category: 'Partners'
+                    }
+                ];
+
+                // Simple search function
+                const results = searchableContent.filter(item => {
+                    const searchLower = query.toLowerCase();
+                    return item.title.toLowerCase().includes(searchLower) ||
+                           item.snippet.toLowerCase().includes(searchLower) ||
+                           item.category.toLowerCase().includes(searchLower);
+                });
+
+                displayResults(results, query);
+            }
+
+            function displayResults(results, query) {
+                const resultsContainer = document.getElementById('searchResults');
+                const noResults = document.getElementById('noResults');
+
+                if (results.length === 0) {
+                    noResults.style.display = 'block';
+                    resultsContainer.innerHTML = '';
+                    return;
+                }
+
+                noResults.style.display = 'none';
+                
+                resultsContainer.innerHTML = results.map(result => `
+                    <div class="search-result-item">
+                        <div class="search-result-title">
+                            <a href="${result.url}">${highlightSearchTerm(result.title, query)}</a>
+                        </div>
+                        <div class="search-result-url">${window.location.origin}/${result.url}</div>
+                        <div class="search-result-snippet">${highlightSearchTerm(result.snippet, query)}</div>
+                        <div class="search-result-meta">Category: ${result.category}</div>
+                    </div>
+                `).join('');
+            }
+
+            function highlightSearchTerm(text, term) {
+                if (!term) return text;
+                const regex = new RegExp(`(${term})`, 'gi');
+                return text.replace(regex, '<mark style="background-color: #fff3cd; padding: 2px 4px; border-radius: 3px;">$1</mark>');
+            }
+        </script>
+    </body>
+</html>
